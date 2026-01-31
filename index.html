@@ -14,34 +14,27 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Latent-Reasoning-VLA">
   <meta property="og:title" content="Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models">
   <meta property="og:description" content="LaRA-VLA internalizes chain-of-thought reasoning into continuous latent representations for efficient vision-language-action control, reducing inference latency while improving performance on simulation and real-robot tasks.">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <!-- NOTE: Using relative paths for local preview/static hosting. For best social sharing, use absolute URLs. -->
+  <meta property="og:url" content="./">
+  <meta property="og:image" content="static/images/1.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="Latent Reasoning VLA - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Jing Lyu">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="vision-language-action">
+  <meta property="article:tag" content="latent reasoning">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
   <meta name="twitter:title" content="Latent Reasoning VLA (LaRA-VLA)">
   <meta name="twitter:description" content="Latent chain-of-thought reasoning for efficient vision-language-action control. Up to 90% lower inference latency vs explicit CoT while improving performance on simulation and real-robot tasks.">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image" content="static/images/1.png">
+  <meta name="twitter:image:alt" content="Latent Reasoning VLA - Research Preview">
 
   <!-- Academic/Research Specific -->
   <meta name="citation_title" content="Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models">
@@ -112,7 +105,7 @@
         "name": "Jing Lyu",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Institution Name"
         }
       }
     ],
@@ -121,8 +114,8 @@
       "@type": "Organization",
       "name": "International Conference on Machine Learning (ICML)"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "url": "./",
+    "image": "static/images/1.png",
     "keywords": ["vision-language-action", "VLA", "chain-of-thought", "latent reasoning", "embodied AI", "robotics"],
     "abstract": "Vision-Language-Action (VLA) models benefit from chain-of-thought (CoT) reasoning, but existing approaches incur high inference overhead and rely on discrete reasoning representations that mismatch continuous perception and control. We propose Latent Reasoning VLA (LaRA-VLA), a unified VLA framework that internalizes multi-modal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, action-oriented control. To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both simulation benchmarks and long-horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms state-of-the-art VLA methods while reducing inference latency by up to 90% compared to explicit CoT-based approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time embodied control.",
     "citation": "@inproceedings{lyu2026lara_vla,\\n  title={Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models},\\n  author={Lyu, Jing},\\n  booktitle={International Conference on Machine Learning (ICML)},\\n  year={2026}\\n}",
@@ -130,7 +123,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "./"
     },
     "about": [
       {
@@ -150,13 +143,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "name": "Institution Name",
+    "url": "./",
+    "logo": "static/images/favicon.ico"
   }
   </script>
 </head>
@@ -168,53 +157,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+  <!-- More Works Dropdown (restore this block if you want to showcase more works) -->
 
   <main id="main-content">
   <section class="hero">
@@ -230,7 +173,6 @@
             </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
                     <span class="author-block">Institution Name<br>ICML 2026</span>
                   </div>
 
@@ -247,7 +189,7 @@
                     </span>
 
                     <span class="link-block">
-                      <a href="../lara-vla_real_world_tasks.mp4" target="_blank"
+                      <a href="static/videos/lara-vla_real_world_tasks.mp4" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-video"></i>
@@ -269,7 +211,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="../lara-vla_real_world_tasks.mp4" type="video/mp4">
+        <source src="static/videos/lara-vla_real_world_tasks.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         Real-world long-horizon manipulation tasks.
