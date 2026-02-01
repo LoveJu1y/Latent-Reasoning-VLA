@@ -328,6 +328,39 @@ body {
   background: #000;
 }
 
+.realworld-compare {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.comparison-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.video-grid {
+  margin-top: 0.5rem;
+}
+
+.realworld-compare::before {
+  content: '';
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: 50%;
+  width: 1px;
+  background: var(--border-color);
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .realworld-compare::before {
+    display: none;
+  }
+}
+
 .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
