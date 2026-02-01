@@ -205,6 +205,17 @@ body {
   margin-right: 0.5rem;
 }
 
+.publication-meta {
+  margin-top: 1.25rem;
+}
+
+.publication-affiliations {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
@@ -251,6 +262,70 @@ body {
 .publication-body img:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+}
+
+.section-divider {
+  width: min(960px, 90%);
+  height: 2px;
+  background: var(--border-color);
+  margin: 2rem auto 0;
+}
+
+.figure-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.figure-card img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.analysis-section .figure-card img {
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.analysis-section .ablation-card img {
+  max-height: 260px;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.figure-caption {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.image-pair .figure-card {
+  height: 100%;
+}
+
+.realworld-videos {
+  margin-top: 1.25rem;
+}
+
+.video-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem;
+}
+
+.realworld-video {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
+  background: #000;
 }
 
 .results-carousel {

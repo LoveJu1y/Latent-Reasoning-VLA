@@ -167,47 +167,58 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="#" target="_blank" rel="noopener noreferrer">Jing Lyu</a>
+              <span class="author-block">Shuanghao Bai<sup>* 1,2</sup></span>
+              <span class="author-block">Jing Lyu<sup>* 2,3,4</sup></span>
+              <span class="author-block">Wanqi Zhou<sup>1</sup></span>
+              <span class="author-block">Zhe Li<sup>2</sup></span>
+              <span class="author-block">Dakai Wang<sup>1</sup></span>
+              <span class="author-block">Lei Xing<sup>1</sup></span>
+              <span class="author-block">Xiaoguang Zhao<sup>3</sup></span>
+              <span class="author-block">Pengwei Wang<sup>2</sup></span>
+              <span class="author-block">Zhongyuan Wang<sup>2</sup></span>
+              <span class="author-block">Cheng Chi<sup>2</sup></span>
+              <span class="author-block">Badong Chen<sup>1</sup></span>
+              <span class="author-block">Shanghang Zhang<sup>2,5</sup></span>
+            </div>
+
+            <div class="publication-meta">
+              <p class="eql-cntrb">* Equal contribution</p>
+              <p class="publication-affiliations">
+                <sup>1</sup> Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University.
+                <sup>2</sup> Beijing Academy of Artificial Intelligence.
+                <sup>3</sup> Institute of Automation, University of Chinese Academy of Sciences.
+                <sup>4</sup> School of Artificial Intelligence, University of Chinese Academy of Sciences.
+                <sup>5</sup> Peking University.
+              </p>
+              <p class="publication-affiliations">
+                Correspondence to: Cheng Chi &lt;chicheng@baai.ac.cn&gt;, Badong Chen &lt;chenbd@mail.xjtu.edu.cn&gt;,
+                Shanghang Zhang &lt;shanghang@pku.edu.cn&gt;.
+              </p>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/ICML_2026_Latent_Reasoning_VLA.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
               </span>
-            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <span class="link-block">
-                        <a href="static/pdfs/ICML_2026_Latent_Reasoning_VLA.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <span class="link-block">
-                      <a href="#" class="external-link button is-normal is-rounded is-dark" aria-disabled="true"
-                        title="Code link coming soon" onclick="return false;">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code (Coming soon)</span>
-                    </a>
-                  </span>
-
-                    <span class="link-block">
-                      <a href="static/videos/lara-vla_real_world_tasks.mp4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-video"></i>
-                      </span>
-                      <span>Real-World Tasks (MP4)</span>
-                    </a>
-                  </span>
-            </div>
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark" aria-disabled="true"
+                  title="Code link coming soon" onclick="return false;">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code (Coming soon)</span>
+              </a>
+            </span>
+          </div>
+        </div>
           </div>
         </div>
       </div>
@@ -215,23 +226,7 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/lara-vla_real_world_tasks.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Real-world long-horizon manipulation tasks.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
+<!-- Abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -239,120 +234,164 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision-Language-Action (VLA) models benefit from chain-of-thought (CoT) reasoning, but existing approaches incur high inference overhead and rely on discrete reasoning representations that mismatch continuous perception and control. We propose Latent Reasoning VLA (LaRA-VLA), a unified VLA framework that internalizes multi-modal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, action-oriented control. To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both simulation benchmarks and long-horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms state-of-the-art VLA methods while reducing inference latency by up to 90% compared to explicit CoT-based approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time embodied control.
+            VisionLanguageAction (VLA) models benefit from chainofthought (CoT) reasoning, but existing approaches incur high inference overhead
+            and rely on discrete reasoning representations that mismatch continuous perception and control. We propose <b>Latent Reasoning VLA (LaRA-VLA)</b>, a
+            unified VLA framework that internalizes multimodal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA
+            performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, actionoriented control.
+            To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision
+            to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both
+            simulation benchmarks and long horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms stateoftheart VLA methods while
+            reducing inference latency by up to 90% compared to explicit CoTbased approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time
+            embodied control.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End Abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/2.png" alt="Figure 2" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/3.png" alt="Figure 3" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/5.png" alt="Figure 5" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/6.png" alt="Figure 6" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/7.png" alt="Figure 7" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/8.png" alt="Figure 8" loading="lazy"/>
-        </div>
-        <div class="item">
-          <img src="static/images/9.png" alt="Figure 9" loading="lazy"/>
-        </div>
-      </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- (Optional) Video Presentation / Additional Videos -->
-<!-- If you have a YouTube talk or more qualitative videos, add them here. -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/ICML_2026_Latent_Reasoning_VLA.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- 1. Model Architecture -->
+  <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered"> LaRA-VLA</h2>
+    <div class="columns is-variable is-6 is-multiline image-pair">
+      <div class="column is-12">
+        <figure class="figure-card">
+          <img src="static/images/2.png" alt="Model architecture" loading="lazy">
+        </figure>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@misc{lyu2026lara_vla,
-  title={Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models},
-  author={Lyu, Jing},
-  year={2026},
-  note={Under review}
-}</code></pre>
+    <div class="content has-text-justified">
+      <p>
+        Training proceeds in three stages: (i) <b>explicit CoT finetuning</b> with aligned visual prediction latents
+        and inversedynamics supervision for actions; (ii) a <b>curriculumbased transition</b> from explicit CoT to compact text latents, gradually
+        reducing the number of text tokens while increasing reliance on latent reasoning, where the latent representations are also implicitly
+        supervised by visual and action signals; and (iii) adaptation of <b>latent-conditioned VLM features</b> to an action expert for efficient action
+        generation without explicit CoT at inference time.
+      </p>
     </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+<!-- End Model Architecture -->
 
+<!-- 2. Experiments -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments</h2>
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <h3 class="title is-4">Simulation Experiments</h3>
+    <h4 class="title is-5">Libero</h4>
+    <div class="figure-card">
+      <img src="static/images/3.png" alt="LIBERO results" loading="lazy">
+      <p class="figure-caption">
+        On <b>LIBERO</b>, LaRA-VLA achieves the best overall performance with an average success rate of <b>97.9%</b>, including 99.8% on
+        the Object suite and 96.6% on the Long suite, demonstrating strong object-centric reasoning and robustness in <b>long-horizon</b> manipulation.
+      </p>
+    </div>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <h4 class="title is-5">SimplerEnv</h4>
+    <div class="figure-card">
+      <img src="static/images/5.png" alt="SimplerEnv WidowX results" loading="lazy">
+      <p class="figure-caption">
+        On <b>SimplerEnv-WidowX</b>, LaRA-VLA attains the highest average success
+        rate of 68.8%, outperforming <b>NoCoT</b>, <b>Textual CoT</b>, and <b>Visual CoT</b> baselines. Across both benchmarks, LaRA-VLA consistently surpasses textual and
+        visual CoT methods, indicating that latent reasoning provides more effective and stable guidance for action prediction and generalizes better
+        than explicit CoT supervision.
+      </p>
+    </div>
 
-        </div>
+    <h3 class="title is-4">Real-world Experiments</h3>
+    <div class="columns is-variable is-6 is-multiline image-pair">
+      <div class="column is-12">
+        <figure class="figure-card">
+          <img src="static/images/6.png" alt="Real-world task results" loading="lazy">
+        </figure>
+      </div>
+    </div>
+    <p class="figure-caption">
+      <b>LaRA-VLA</b> consistently outperforms <b>ACT</b> and <b>GR00T N1.5</b> across all four <b>long-horizon</b> real-world manipulation tasks, achieving the highest
+      average success rate. The improvements are especially pronounced on tasks requiring multi-stage reasoning and sustained temporal coordination,
+      highlighting enhanced robustness to error accumulation over long horizons.
+    </p>
+    <div class="columns is-variable is-2 is-multiline realworld-videos">
+      <div class="column is-6-desktop is-6-tablet is-12-mobile">
+        <figure class="video-card">
+          <video class="realworld-video" controls preload="metadata" playsinline>
+            <source src="static/videos/Pick_Bowls.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+      <div class="column is-6-desktop is-6-tablet is-12-mobile">
+        <figure class="video-card">
+          <video class="realworld-video" controls preload="metadata" playsinline>
+            <source src="static/videos/Find&Pick_Cube.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+      <div class="column is-6-desktop is-6-tablet is-12-mobile">
+        <figure class="video-card">
+          <video class="realworld-video" controls preload="metadata" playsinline>
+            <source src="static/videos/Pick_Fruits.mp4" type="video/mp4">
+          </video>
+        </figure>
+      </div>
+      <div class="column is-6-desktop is-6-tablet is-12-mobile">
+        <figure class="video-card">
+          <video class="realworld-video" controls preload="metadata" playsinline>
+            <source src="static/videos/Pick_Objects.mp4" type="video/mp4">
+          </video>
+        </figure>
       </div>
     </div>
   </div>
-</footer>
+</section>
+<!-- End Experiments -->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<div class="section-divider"></div>
 
-    <!-- End of Statcounter Code -->
+<!-- 3. Analysis -->
+<section class="section analysis-section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Analysis</h2>
+
+    <h3 class="title is-4">Latent Collapse</h3>
+    <div class="columns is-variable is-6 is-multiline image-pair">
+      <div class="column is-12">
+        <figure class="figure-card">
+          <img src="static/images/11.png" alt="Latent collapse analysis" loading="lazy">
+          <p class="figure-caption">
+            Latent tokens associated with different reasoning components form wellseparated and semantically coherent <b>clusters</b>, demonstrating
+            clear <b>functional specialization</b> rather than degeneration into uniform or uninformative representations. Moreover, latent
+            representations of language instruction tokens (gray points) remain structured and occupy a distinct subspace from reasoning latents, indicating
+            that latent CoT does not trivially reuse language embeddings. 
+          </p>
+        </figure>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Inference Time</h3>
+    <div class="figure-card">
+      <img src="static/images/12.png" alt="Inference time comparison" loading="lazy">
+      <p class="figure-caption">
+        LaRA-VLA significantly reduces inference latency, achieving 135 ms per rollout and outperforming all baselines by a large margin.
+        Compared to explicit CoT methods, this yields up to a 90% reduction in inference time, demonstrating the efficiency benefits of latent
+        reasoning without explicit CoT decoding.
+      </p>
+    </div>
+
+    <h3 class="title is-4">Ablation</h3>
+    <div class="figure-card ablation-card">
+      <img src="static/images/10.png" alt="Ablation study" loading="lazy">
+      <p class="figure-caption">
+        Ablation study of different forms of CoT supervision on SimplerEnv. <b>TextCoT</b> denotes explicit textual chain of thought,
+        <b>Latent TextCoT</b> denotes latent textual chain of thought, and <b>Latent VisCoT</b> denotes latent visual chain of thought.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Analysis -->
+  </main>
 
   </body>
   </html>
