@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <meta name="title" content="Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models - Jing Lyu">
-  <meta name="description" content="LaRA-VLA internalizes chain-of-thought reasoning into continuous latent representations for efficient vision-language-action control, reducing inference latency while improving performance on simulation and real-robot tasks.">
+  <meta name="title" content="ICML 2026 | Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models">
+  <meta name="description" content="ICML 2026 paper: LaRA-VLA internalizes chain-of-thought reasoning into continuous latent representations for efficient vision-language-action control, reducing inference latency while improving performance on simulation and real-robot tasks.">
   <meta name="keywords" content="vision-language-action, VLA, chain-of-thought, latent reasoning, embodied AI, robotics, manipulation, imitation learning">
   <meta name="author" content="Jing Lyu">
   <meta name="robots" content="index, follow">
@@ -15,8 +15,8 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Latent-Reasoning-VLA">
-  <meta property="og:title" content="Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models">
-  <meta property="og:description" content="LaRA-VLA internalizes chain-of-thought reasoning into continuous latent representations for efficient vision-language-action control, reducing inference latency while improving performance on simulation and real-robot tasks.">
+  <meta property="og:title" content="ICML 2026 | Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models">
+  <meta property="og:description" content="ICML 2026 paper: LaRA-VLA internalizes chain-of-thought reasoning into continuous latent representations for efficient vision-language-action control, reducing inference latency while improving performance on simulation and real-robot tasks.">
   <!-- NOTE: Using relative paths for local preview/static hosting. For best social sharing, use absolute URLs. -->
   <meta property="og:url" content="./">
   <meta property="og:image" content="static/images/2.png">
@@ -31,8 +31,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Latent Reasoning VLA (LaRA-VLA)">
-  <meta name="twitter:description" content="Latent chain-of-thought reasoning for efficient vision-language-action control. Up to 90% lower inference latency vs explicit CoT while improving performance on simulation and real-robot tasks.">
+  <meta name="twitter:title" content="ICML 2026 | Latent Reasoning VLA (LaRA-VLA)">
+  <meta name="twitter:description" content="ICML 2026 paper. Latent chain-of-thought reasoning for efficient vision-language-action control—up to 90% lower inference latency vs explicit CoT while improving performance on simulation and real-robot tasks.">
   <meta name="twitter:image" content="static/images/2.png">
   <meta name="twitter:image:alt" content="Latent Reasoning VLA - Research Preview">
 
@@ -57,7 +57,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <title>Latent Reasoning VLA (LaRA-VLA) | Project Page</title>
+  <title>ICML 2026 | Latent Reasoning VLA (LaRA-VLA)</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/vlas.ico">
@@ -65,7 +65,7 @@
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20260207b">
   
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -112,13 +112,13 @@
     "datePublished": "2026-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "Under review"
+      "name": "International Conference on Machine Learning (ICML)"
     },
     "url": "./",
     "image": "static/images/2.png",
     "keywords": ["vision-language-action", "VLA", "chain-of-thought", "latent reasoning", "embodied AI", "robotics"],
     "abstract": "Vision-Language-Action (VLA) models benefit from chain-of-thought (CoT) reasoning, but existing approaches incur high inference overhead and rely on discrete reasoning representations that mismatch continuous perception and control. We propose Latent Reasoning VLA (LaRA-VLA), a unified VLA framework that internalizes multi-modal CoT reasoning into continuous latent representations for embodied action. LaRA-VLA performs unified reasoning and prediction in latent space, eliminating explicit CoT generation at inference time and enabling efficient, action-oriented control. To realize latent embodied reasoning, we introduce a curriculum-based training paradigm that progressively transitions from explicit textual and visual CoT supervision to latent reasoning, and finally adapts latent reasoning dynamics to condition action generation. We construct two structured CoT datasets and evaluate LaRA-VLA on both simulation benchmarks and long-horizon real-robot manipulation tasks. Experimental results show that LaRA-VLA consistently outperforms state-of-the-art VLA methods while reducing inference latency by up to 90% compared to explicit CoT-based approaches, demonstrating latent reasoning as an effective and efficient paradigm for real-time embodied control.",
-    "citation": "@misc{lyu2026lara_vla,\\n  title={Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models},\\n  author={Lyu, Jing},\\n  year={2026},\\n  note={Under review}\\n}",
+    "citation": "@inproceedings{bai2026laravla,\\n  title={Latent Reasoning {VLA}: Latent Thinking and Prediction for Vision-Language-Action Models},\\n  author={Bai, Shuanghao and Lyu, Jing and Zhou, Wanqi and Li, Zhe and Wang, Dakai and Xing, Lei and Zhao, Xiaoguang and Wang, Pengwei and Wang, Zhongyuan and Chi, Cheng and Chen, Badong and Zhang, Shanghang},\\n  booktitle={International Conference on Machine Learning},\\n  year={2026}\\n}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
@@ -165,6 +165,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
+            <div class="has-text-centered mb-5">
+              <div id="hero-icml-badge" class="hero-icml-badge">ICML 2026</div>
+            </div>
             <h1 class="title is-1 publication-title">Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">Shuanghao Bai<sup>* 1,2</sup></span>
